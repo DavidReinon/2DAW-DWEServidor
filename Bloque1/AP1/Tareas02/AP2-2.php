@@ -54,7 +54,7 @@ $distanciaTotalCarrera = 100;
 while (true) {
     foreach ($coches as $index => $unCoche) {
         $resultadoDado = tirarDado();
-        echo "Jugador " . ($index + 1) . "tirando dado del 1 al 10\n";
+        echo "Jugador " . ($index + 1) . " tirando dado del 1 al 10\n";
         echo "Resultado: $resultadoDado.\n";
 
         //Comprobacion de que no se supera la velocidad maxima
