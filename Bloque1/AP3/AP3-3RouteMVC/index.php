@@ -13,6 +13,7 @@ $parametro = $url_parts[5] ?? null;
 // Incluir el archivo del controlador
 $controladorPath = './controladores/' . $controlador . '.php';
 echo "Controlador Path: $controladorPath<br>";
+
 if (file_exists($controladorPath)) {
     require_once $controladorPath;
     echo "Controlador: $controlador, Acción: $accion, Parámetro: $parametro<br>";

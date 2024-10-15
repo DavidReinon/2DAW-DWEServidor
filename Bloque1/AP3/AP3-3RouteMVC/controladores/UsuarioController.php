@@ -4,7 +4,7 @@ require_once __DIR__ . '/../modelos/Usuario.php';
 class UsuarioController {
     public function index() {
         $usuarios = Usuario::getListaUsuarios();
-        include __DIR__ . '/../vistas/listaUsuarios.php';
+        require __DIR__ . '/../vistas/listaUsuarios.php';
     }
 
     public function ver(int $id) {
