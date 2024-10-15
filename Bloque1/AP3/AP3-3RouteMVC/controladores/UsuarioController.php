@@ -1,9 +1,9 @@
 <?php
-require_once '../modelos/Usuario.php';
+require_once __DIR__ . '/../modelos/Usuario.php';
 
 function verListaUsuarios() {
     $usuarios = Usuario::getListaUsuarios();
-    require '../vistas/listaUsuarios.php';
+    include __DIR__ . '/../vistas/listaUsuarios.php';
 }
 
 function verUsuario(int $id) {

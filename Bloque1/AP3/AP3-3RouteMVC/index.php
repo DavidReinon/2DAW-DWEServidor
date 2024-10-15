@@ -1,17 +1,17 @@
 <?php
-
-$url = $_GET['url'] ?? 'usuario/index'; // Capturar la URL
+$defaultController = "Usuario";
+$url = $SERVER['REQUEST_URI'] ?? 'AP3/AP3-3RouteMVC/' . $defaultController . '/index'; // Capturar la URL
 
 // Desglosar la URL en partes (controlador, acción, parámetro)
 $url_parts = explode('/', $url);
 
 // Asignar controlador, acción y parámetro por defecto
-$controlador = !empty($url_parts[0]) ? $url_parts[0] . 'Controller' : 'UsuarioController';
-$accion = $url_parts[1] ?? 'index';
-$parametro = $url_parts[2] ?? null;
+$controlador = !empty($url_parts[2]) ? $url_parts[2] : $defaultController;
+$accion = $url_parts[3] ?? 'index';
+$parametro = $url_parts[4] ?? null;
 
 // Incluir el archivo del controlador
-$controladorPath = 'controladores/' . $controlador . '.php';
+$controladorPath = 'controladores/' . $controlador . 'Controller' . '.php';
 if (file_exists($controladorPath)) {
     require_once $controladorPath;
 
@@ -22,10 +22,6 @@ if (file_exists($controladorPath)) {
     } else {
         echo "Acción no encontrada.";
     }
-
 } else {
     echo "Controlador no encontrado.";
 }
-
-
-
