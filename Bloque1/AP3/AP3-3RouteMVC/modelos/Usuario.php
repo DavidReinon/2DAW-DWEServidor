@@ -10,6 +10,19 @@ class Usuario {
     private string $nombre;
     private string $email;
 
+    public function getId(): int {
+        return $this->id;
+    }
+
+    public function getNombre(): string {
+        return $this->nombre;
+    }
+
+    public function getEmail(): string {
+        return $this->email;
+    }
+
+
     public function __construct(int $id, string $nombre, string $email) {
         $this->id = $id;
         $this->nombre = $nombre;
