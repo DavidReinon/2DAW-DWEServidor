@@ -1,0 +1,17 @@
+{
+  "name": "daw-dwes/ap34-mvc-routing-con-composer",
+  "authors": [
+    {
+      "name": "fdiaz-alonso",
+      "email": "fdiaz-alonso@florida-uni.es"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "AP34\\": "src/",
+      "Config\\": "config/"
+    }
+  },
+  "require": {
+  }
+}
