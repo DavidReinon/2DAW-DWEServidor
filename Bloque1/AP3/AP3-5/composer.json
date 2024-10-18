@@ -1,0 +1,19 @@
+{
+    "name": "root/ap3-5",
+    "description": "Proyecto para aprender a usar composer",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Root\\Ap35\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DavidReinon"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "justinrainbow/json-schema": "^6.0"
+    }
+}
