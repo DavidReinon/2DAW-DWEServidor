@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'daw-dwes/ap34-mvc-routing-con-composer',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '4fd78c3812f6af695f5507b0937bb1c606afb44f',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => null,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'daw-dwes/ap34-mvc-routing-con-composer' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '4fd78c3812f6af695f5507b0937bb1c606afb44f',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => null,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

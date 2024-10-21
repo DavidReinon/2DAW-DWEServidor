@@ -1,10 +1,18 @@
 {
-  "/":{
+  "/": {
     "controller": "MainController",
-    "action":   "main"
+    "action": "main"
   },
-  "/detalle":{
-    "controller":"DetalleController",
+  "/detalle": {
+    "controller": "DetalleController",
     "action": "detail"
+  },
+  "/nuevaTarea": {
+    "controller": "MainController",
+    "action": "nuevaTarea"
+  },
+  "/eliminar": {
+    "controller": "MainController",
+    "action": "eliminar"
   }
 }

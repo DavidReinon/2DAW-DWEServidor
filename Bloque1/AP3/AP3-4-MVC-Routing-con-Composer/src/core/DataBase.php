@@ -36,8 +36,18 @@ class DataBase implements IDataBase
      * ESTA FUNCIÓN SE HA IMPLEMENTADO SÍ O SÍ PORQUE LO DEFINE EL INTERFAZ
      */
     public function executeSQL($sql){
+        $result = $this->conn->query($sql);
 
-        return $this->conn->query($sql)->fetch_all(MYSQLI_ASSOC);
+        if ($result === true) {
+            // The query was successful but did not return a result set (e.g., INSERT, UPDATE, DELETE)
+            return [];
+        } elseif ($result) {
+            // The query was successful and returned a result set
+            return $result->fetch_all(MYSQLI_ASSOC);
+        } else {
+            // The query failed
+            throw new \Exception("Database query failed: " . $this->conn->error);
+        }
     }
 
     /**
