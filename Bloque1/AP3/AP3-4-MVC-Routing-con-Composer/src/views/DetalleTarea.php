@@ -9,10 +9,12 @@ class DetalleTarea
 {
     public function __construct(array $row=null)
     {
+        //Ruta de antes: /4-MVC/MVC4-MVC-Routing-con-Composer/public/
+        //Para volver a vista general
         if(is_null($row)){
             //No hemos recibido nada por lo que debemos indicarlo.
             echo "No se han recibido datos para mostrar en la vista del Listado";
-            echo "<p><a href='/4-MVC/MVC4-MVC-Routing-con-Composer/public/'>volver</p>";
+            echo "<p><a href='/AP3/AP3-4-MVC-Routing-con-Composer/public/'>volver</p>";
         }else {
             //Verificamos que hemos recibido contenido para rellenar la tabla y si no hemos recibido nada lo indicaremos.
             if (count($row) > 0) {
@@ -22,11 +24,11 @@ class DetalleTarea
                     "<td>" . $row["titulo"] . "<td>" . $row["descripcion"] .
                     "<td>" . $row["fecha_creacion"] .
                     "<td>" . $row["fecha_vencimiento"] .
-                    "<td><a href='/4-MVC/MVC4-MVC-Routing-con-Composer/public/'>volver</td></tr>";
+                    "<td><a href='/AP3/AP3-4-MVC-Routing-con-Composer/public/'>volver</td></tr>";
                 echo "</table>";
             } else {
                 echo "0 results";
-                echo "<p><a href='/4-MVC/MVC4-MVC-Routing-con-Composer/public/'>volver</p>";
+                echo "<p><a href='/AP3/AP3-4-MVC-Routing-con-Composer/public/'>volver</p>";
             }
         }
 
