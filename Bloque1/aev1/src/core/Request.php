@@ -15,11 +15,10 @@ class Request implements IRequest {
     public function __construct() {
         //Lo primero que debemos hacer es obtener la ruta del navegador mediante la URI
         $rawRoute = $_SERVER["REQUEST_URI"];
-        echo ($rawRoute . "<br>");
+        echo("Ruta de REQUEST_URI: $rawRoute<br>");
         //Separamos la URI en las diferentes partes que contine, separadas por la "/" de las carpetas
         //y lo guardamos en un array.
         $rawRouteElements = explode("/", $rawRoute);
-        var_dump($rawRouteElements);
         //El primer elementos(0) lo descartamos porque es el texto de la URI que se encuentra antes de la "/"
         //Nos quedamos con el segundo elemento(1) que definimos como la ruta que va a usar nuestra aplicación
         $this->route = "/" . $rawRouteElements[3];

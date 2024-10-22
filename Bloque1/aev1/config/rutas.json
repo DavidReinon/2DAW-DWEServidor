@@ -6,5 +6,9 @@
   "/detalle":{
     "controller":"DetalleController",
     "action": "detail"
+  },
+  "/eliminar": {
+    "controller": "MainController",
+    "action": "eliminar"
   }
 }

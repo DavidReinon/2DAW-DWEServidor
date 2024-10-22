@@ -13,7 +13,6 @@ class DataBase implements IDataBase
     {
         //Recogemos los datos de configuración decodificando el archivo JSON de la configuración de la BBDD
         $this->dbConfig = json_decode(file_get_contents(__DIR__."/../../config/dbConfig.json"),true);
-        var_dump($this->dbConfig);
         $this->connect();
     }
 
@@ -37,8 +36,15 @@ class DataBase implements IDataBase
      * ESTA FUNCIÓN SE HA IMPLEMENTADO SÍ O SÍ PORQUE LO DEFINE EL INTERFAZ
      */
     public function executeSQL($sql){
+        $result = $this->conn->query($sql);
 
-        return $this->conn->query($sql)->fetch_all(MYSQLI_ASSOC);
+        if ($result === true) {
+            //En el caso de otra consulta que no devuelve nada
+            return true;
+        } elseif ($result) {
+            // En el caso de que devuelva algo
+            return $result->fetch_all(MYSQLI_ASSOC);
+        }
     }
 
     /**

@@ -17,7 +17,7 @@ class Request implements IRequest
     {
         //Lo primero que debemos hacer es obtener la ruta del navegador mediante la URI
         $rawRoute = $_SERVER["REQUEST_URI"];
-        echo($rawRoute);
+        echo("Ruta de REQUEST_URI: $rawRoute");
         //Separamos la URI en las diferentes partes que contine, separadas por la "/" de las carpetas
         //y lo guardamos en un array.
         $rawRouteElements = explode("/",$rawRoute);
