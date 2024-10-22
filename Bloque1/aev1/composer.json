@@ -1,0 +1,15 @@
+{
+    "name": "d/aev1",
+    "description": "Evaluable Clase David Reinón",
+    "autoload": {
+        "psr-4": {
+            "D\\Aev1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Reinón"
+        }
+    ],
+    "require": {}
+}

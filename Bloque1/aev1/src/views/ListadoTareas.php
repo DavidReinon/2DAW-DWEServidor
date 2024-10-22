@@ -1,6 +1,6 @@
 <?php
 
-namespace AP34\Views;
+namespace D\Aev1\Views;
 
 class ListadoTareas
 {
@@ -20,7 +20,7 @@ class ListadoTareas
                 echo "<table border='1'>";
                 echo "<tr><td>Título</td><td>Descripción</td><td>Fecha de Creación</td><td>Fecha de Vencimiento</td></tr>";
                 foreach ($rows as $row){
-                    echo "<tr><td><a href='/detalle/".$row["id"]."'>" . $row["titulo"] .
+                    echo "<tr><td><a href='/aev1/public/detalle/".$row["id"]."'>" . $row["titulo"] .
                         "</a><td>" . $row["descripcion"] . "</td><td>" . $row["fecha_creacion"] . "</td><td>" . $row["fecha_vencimiento"] . "</td></tr>";
                 }
                 echo "</table>";

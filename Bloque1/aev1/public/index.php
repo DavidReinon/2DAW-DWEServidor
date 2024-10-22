@@ -4,9 +4,9 @@ require_once "../vendor/autoload.php";
 
 //Cuando se hace una llamada a los namespaces puede ser de forma individual o agrupando varios dentro de llaves, siempre
 // y cuando la ruta sea compatible.
-use AP34\Core\Dispatcher;
-use AP34\Core\Request;
-use AP34\Core\RouteCollection;
+use D\Aev1\Core\Dispatcher;
+use D\Aev1\Core\Request;
+use D\Aev1\Core\RouteCollection;
 
 //Creamos un objeto que contenga todas las rutas de la aplicación.
 $route = new RouteCollection();

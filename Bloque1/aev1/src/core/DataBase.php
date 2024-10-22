@@ -1,8 +1,8 @@
 <?php
 
-namespace AP34\Core;
+namespace D\Aev1\Core;
 
-use AP34\Core\Interfaces\IDataBase;
+use D\Aev1\Core\Interfaces\IDataBase;
 
 class DataBase implements IDataBase
 {
@@ -13,6 +13,7 @@ class DataBase implements IDataBase
     {
         //Recogemos los datos de configuración decodificando el archivo JSON de la configuración de la BBDD
         $this->dbConfig = json_decode(file_get_contents(__DIR__."/../../config/dbConfig.json"),true);
+        var_dump($this->dbConfig);
         $this->connect();
     }
 

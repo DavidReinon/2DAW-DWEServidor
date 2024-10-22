@@ -1,10 +1,10 @@
 <?php
 
-namespace AP34\Controllers;
+namespace D\Aev1\Controllers;
 
-use AP34\core\DataBase;
-use AP34\models\Tareas;
-use AP34\views\DetalleTarea;
+use D\Aev1\core\DataBase;
+use D\Aev1\models\Tareas;
+use D\Aev1\views\DetalleTarea;
 
 /**
  * Controlador para la ruta /detalle

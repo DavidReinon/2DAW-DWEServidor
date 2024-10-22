@@ -1,8 +1,8 @@
 <?php
 
-namespace AP34\Models;
+namespace D\Aev1\Models;
 
-use AP34\Core\Interfaces\IDataBase;
+use D\Aev1\Core\Interfaces\IDataBase;
 
 class Tareas
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace AP34\Core;
+namespace D\Aev1\Core;
 
-use AP34\Core\Interfaces\IRoute;
+use D\Aev1\Core\Interfaces\IRoute;
 
 /**
  * Clase que se encarga de obtener las rutas por defecto que tiene la aplicación
