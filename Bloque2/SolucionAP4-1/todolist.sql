@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `todolist`
 --
-CREATE DATABASE IF NOT EXISTS `todolistv2` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
-USE `todolistv2`;
+CREATE DATABASE IF NOT EXISTS `todolist` DEFAULT CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+USE `todolist`;
 
 -- --------------------------------------------------------
 
