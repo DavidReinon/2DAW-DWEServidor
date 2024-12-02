@@ -1,15 +1,15 @@
 <?php
-// bootstrap.php
-use Doctrine\DBAL\DriverManager;
-use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\ORMSetup;
+use Doctrine\ORM\EntityManager;
+use Doctrine\DBAL\DriverManager;
 
-require_once "vendor/autoload.php";
-// Create a simple "default" Doctrine ORM configuration for Attributes
+require_once __DIR__ . '/vendor/autoload.php';
+
 $config = ORMSetup::createAttributeMetadataConfiguration(
     paths: [__DIR__ . '/src'],
     isDevMode: true,
 );
+
 // Parámetros de conexión a la base de datos
 $dbParams = [
     'driver'   => 'pdo_mysql',
@@ -19,7 +19,8 @@ $dbParams = [
     'dbname'   => 'juegos',
 ];
 
- // configuring the database connection
+// Crear la conexión utilizando DriverManager
 $connection = DriverManager::getConnection($dbParams, $config);
- // obtaining the entity manager
- $entityManager = new EntityManager($connection, $config);
+
+// Crear el EntityManager
+$entityManager = new EntityManager($connection, $config);
