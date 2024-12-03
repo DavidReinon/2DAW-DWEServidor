@@ -16,7 +16,7 @@ $dbParams = [
     'host'     => '172.18.0.2',
     'user'     => 'root',
     'password' => 'root',
-    'dbname'   => 'juegos',
+    'dbname'   => 'Juegos_AP4_3',
 ];
 
  // configuring the database connection
