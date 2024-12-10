@@ -1,0 +1,22 @@
+{
+  "/": {
+    "controller": "MainController",
+    "action": "main"
+  },
+  "/crearJugador": {
+    "controller": "JugadorController",
+    "action": "crearJugador"
+  },
+  "/guardarJugador": {
+    "controller": "JugadorController",
+    "action": "guardarJugador"
+  },
+  "/crearJuego": {
+    "controller": "JuegoController",
+    "action": "crearJuego"
+  },
+  "guardarJuego": {
+    "controller": "JuegoController",
+    "action": "guardarJuego"
+  }
+}
