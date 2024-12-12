@@ -4,8 +4,6 @@ namespace AP52\controllers;
 
 use AP52\Entity\Juegos;
 use AP52\views\CrearJuegoView;
-
-use AP52\Entity\DNI;
 use AP52\Entity\Jugadores;
 use Doctrine\ORM\EntityManager;
 

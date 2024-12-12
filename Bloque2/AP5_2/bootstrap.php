@@ -13,7 +13,7 @@ $config = ORMSetup::createAttributeMetadataConfiguration(
 // Parámetros de conexión a la base de datos
 $dbParams = [
     'driver'   => 'pdo_mysql',
-    'host'     => '172.18.0.2',
+    'host'     => '172.18.0.1',
     'user'     => 'root',
     'password' => 'root',
     'dbname'   => 'Juegos_AP4_3',
