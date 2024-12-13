@@ -5,7 +5,7 @@ namespace AP52\views;
 class CrearJugadorView {
     public function __construct(){
         echo '<form action="/guardarJugador" method="post" enctype="multipart/form-data">';
-        echo '<h2>Juego Nuevo</h2>';
+        echo '<h2>Jugador Nuevo</h2>';
 
         // Nombre
         echo '<label for="nombre">Nombre:</label>';

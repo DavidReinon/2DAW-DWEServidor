@@ -11,12 +11,20 @@
     "controller": "JugadorController",
     "action": "guardarJugador"
   },
+  "/verJugadores": {
+    "controller": "JugadorController",
+    "action": "verJugadores"
+  },
   "/crearJuego": {
     "controller": "JuegoController",
     "action": "crearJuego"
   },
-  "guardarJuego": {
+  "/guardarJuego": {
     "controller": "JuegoController",
     "action": "guardarJuego"
+  },
+  "/verJuego": {
+    "controller": "JuegoController",
+    "action": "verJuegos"
   }
 }

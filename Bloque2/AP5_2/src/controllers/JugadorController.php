@@ -46,5 +46,10 @@ class JugadorController {
 
         echo "DNI insertado en BD " . $dni->getId() . "<br>";
         echo "Jugador insertado en BD " . $jugador->getId() . "<br>";
+        echo "<a href='/'>Volver a vista principal</a>";
+    }
+
+    public function verJugadores() {
+
     }
 }

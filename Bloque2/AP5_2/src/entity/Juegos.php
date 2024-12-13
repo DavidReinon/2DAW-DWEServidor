@@ -52,6 +52,7 @@ class Juegos
     private Jugadores $jugador;
 
     //relación bidireccional
+
     /*#[ManyToOne(targetEntity: 'Jugadores'), inversedBy: 'juegos']
     #[JoinColumn(name: 'jugador_id', referencedColumnName: 'id')]
     private Jugadores $jugador;*/

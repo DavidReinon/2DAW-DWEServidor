@@ -29,7 +29,7 @@ class CrearJuegoView {
 
 
         // Botón de envío
-        echo '<button type="submit">Guardar Jugador</button>';
+        echo '<button type="submit">Guardar Juego</button>';
 
         echo '</form>';
     }

@@ -37,7 +37,7 @@ class Jugadores
     private DNI $DNI;
 
     // Relación bidireccional
-    /*    #[OneToMany(targetEntity: Juegos::class, mappedBy: 'jugador')]
+    /*    #[OneToMany(targetEntity: Juegos::class, mappedBy: 'jugadores')]
         private Collection $juegos;*/
 
     public function getId(): int

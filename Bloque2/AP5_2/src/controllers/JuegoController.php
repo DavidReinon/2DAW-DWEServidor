@@ -49,5 +49,6 @@ class JuegoController {
         $this->entityManager->flush();
 
         echo "Juego insertado en la BD con id: " . $juego->getId() . "<br>";
+        echo "<a href='/'>Volver a vista principal</a>";
     }
 }
