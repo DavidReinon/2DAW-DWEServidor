@@ -11,9 +11,9 @@
     "controller": "JugadorController",
     "action": "guardarJugador"
   },
-  "/verJugadores": {
+  "/verListaJugadores": {
     "controller": "JugadorController",
-    "action": "verJugadores"
+    "action": "verListaJugadores"
   },
   "/crearJuego": {
     "controller": "JuegoController",

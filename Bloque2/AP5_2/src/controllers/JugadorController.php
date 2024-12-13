@@ -6,6 +6,8 @@ use AP52\Views\CrearJugadorView;
 
 use AP52\Entity\DNI;
 use AP52\Entity\Jugadores;
+use AP52\views\VerListaJugadoresView;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\EntityManager;
 
 class JugadorController {
@@ -49,7 +51,10 @@ class JugadorController {
         echo "<a href='/'>Volver a vista principal</a>";
     }
 
-    public function verJugadores() {
+    public function verListaJugadores() {
+        $jugadoresRepository = $this->entityManager->getRepository(Jugadores::class);
+        $listaJugadores = $jugadoresRepository->findAll();
 
+        new VerListaJugadoresView($listaJugadores);
     }
 }

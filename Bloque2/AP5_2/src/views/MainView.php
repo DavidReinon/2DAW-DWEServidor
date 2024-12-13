@@ -9,7 +9,7 @@ class MainView
         echo '<ul>';
         echo '<li><a href="/crearJugador">Crear Jugador</a></li>';
         echo '<li><a href="/crearJuego">Crear Juego</a></li>';
-        echo '<li><a href="/">Ver lista Jugadores</a></li>';
+        echo '<li><a href="/verListaJugadores">Ver lista Jugadores</a></li>';
         echo '<li><a href="/">Ver lista Juegos</a></li>';
         echo '<li><a href="/">Editar Jugador</a></li>';
         echo '<li><a href="/">Editar Juego</a></li>';
