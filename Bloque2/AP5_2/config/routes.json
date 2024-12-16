@@ -15,6 +15,18 @@
     "controller": "JugadorController",
     "action": "verListaJugadores"
   },
+  "/gestionarJugadores": {
+    "controller": "JugadorController",
+    "action": "gestionarJugadores"
+  },
+  "/editarJugador": {
+    "controller": "JugadorController",
+    "action": "editarJugador"
+  },
+  "/actualizarJugador": {
+    "controller": "JugadorController",
+    "action": "actualizarJugador"
+  },
   "/crearJuego": {
     "controller": "JuegoController",
     "action": "crearJuego"
@@ -23,8 +35,8 @@
     "controller": "JuegoController",
     "action": "guardarJuego"
   },
-  "/verJuego": {
+  "/verListaJuegos": {
     "controller": "JuegoController",
-    "action": "verJuegos"
+    "action": "verListaJuegos"
   }
 }

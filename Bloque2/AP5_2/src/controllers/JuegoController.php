@@ -5,6 +5,7 @@ namespace AP52\controllers;
 use AP52\Entity\Juegos;
 use AP52\views\CrearJuegoView;
 use AP52\Entity\Jugadores;
+use AP52\views\VerListaJuegosView;
 use Doctrine\ORM\EntityManager;
 
 class JuegoController {
@@ -18,7 +19,7 @@ class JuegoController {
         new CrearJuegoView();
     }
 
-    public function guardarJuego() {
+    public function guardarJuego(): void {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (isset($_POST['nombre'])) $nombre = $_POST['nombre'];
             if (isset($_POST['dificultad'])) $dificultad = $_POST['dificultad'];
@@ -50,5 +51,12 @@ class JuegoController {
 
         echo "Juego insertado en la BD con id: " . $juego->getId() . "<br>";
         echo "<a href='/'>Volver a vista principal</a>";
+    }
+
+    public function verListaJuegos(): void {
+        $juegosRepository = $this->entityManager->getRepository(Juegos::class);
+        $listaJugegos = $juegosRepository->findAll();
+
+        new VerListaJuegosView($listaJugegos);
     }
 }
