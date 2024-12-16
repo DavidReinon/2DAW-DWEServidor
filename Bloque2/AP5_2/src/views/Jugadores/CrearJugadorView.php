@@ -1,6 +1,6 @@
 <?php
 
-namespace AP52\views;
+namespace AP52\views\Jugadores;
 
 class CrearJugadorView {
     public function __construct(){

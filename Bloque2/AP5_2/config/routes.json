@@ -19,10 +19,6 @@
     "controller": "JugadorController",
     "action": "gestionarJugadores"
   },
-  "/editarJugador": {
-    "controller": "JugadorController",
-    "action": "editarJugador"
-  },
   "/actualizarJugador": {
     "controller": "JugadorController",
     "action": "actualizarJugador"

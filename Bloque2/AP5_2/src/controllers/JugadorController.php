@@ -2,11 +2,11 @@
 
 namespace AP52\controllers;
 
-use AP52\Views\CrearJugadorView;
 use AP52\Entity\DNI;
 use AP52\Entity\Jugadores;
-use AP52\views\EditarJugadorFormularioView;
-use AP52\views\VerListaJugadoresView;
+use AP52\views\Jugadores\CrearJugadorView;
+use AP52\views\Jugadores\EditarJugadorFormularioView;
+use AP52\views\Jugadores\VerListaJugadoresView;
 use DateTime;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityRepository;

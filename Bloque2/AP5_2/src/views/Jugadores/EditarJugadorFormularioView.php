@@ -1,6 +1,6 @@
 <?php
 
-namespace AP52\views;
+namespace AP52\views\Jugadores;
 
 use AP52\Entity\Jugadores;
 

@@ -1,8 +1,6 @@
 <?php
 
-namespace AP52\views;
-
-use DateTime;
+namespace AP52\views\Juegos;
 
 class VerListaJuegosView {
     private iterable $listaJuegos;

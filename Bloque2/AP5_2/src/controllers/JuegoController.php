@@ -3,9 +3,9 @@
 namespace AP52\controllers;
 
 use AP52\Entity\Juegos;
-use AP52\views\CrearJuegoView;
 use AP52\Entity\Jugadores;
-use AP52\views\VerListaJuegosView;
+use AP52\views\Juegos\CrearJuegoView;
+use AP52\views\Juegos\VerListaJuegosView;
 use Doctrine\ORM\EntityManager;
 
 class JuegoController {
