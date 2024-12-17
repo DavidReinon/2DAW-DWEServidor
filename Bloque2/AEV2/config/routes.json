@@ -1,0 +1,30 @@
+{
+  "/": {
+    "controller": "MainController",
+    "action": "main"
+  },
+  "/verListaJugadores": {
+    "controller": "JugadorController",
+    "action": "verListaJugadores"
+  },
+  "/crearJugador": {
+    "controller": "JugadorController",
+    "action": "crearJugador"
+  },
+  "/guardarJugador": {
+    "controller": "JugadorController",
+    "action": "guardarJugador"
+  },
+  "/eliminarJugador": {
+    "controller": "JugadorController",
+    "action": "eliminarJugador"
+  },
+  "/crearEquipo": {
+    "controller": "EquipoController",
+    "action": "crearEquipo"
+  },
+  "/guardarEquipo": {
+    "controller": "EquipoController",
+    "action": "guardarEquipo"
+  }
+}

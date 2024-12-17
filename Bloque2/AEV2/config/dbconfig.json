@@ -1,0 +1,7 @@
+{
+  "driver": "pdo_mysql",
+  "host":"172.18.0.2",
+  "user":"root",
+  "password": "root",
+  "dbname": "Padel"
+}

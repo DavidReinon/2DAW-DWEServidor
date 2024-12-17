@@ -2,8 +2,8 @@
 <?php
 // bin/doctrine
 
-use Doctrine\ORM\Tools\Console\ConsoleRunner;
-use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
+use AEV2_Base\vendor\doctrine\orm\src\Tools\Console\ConsoleRunner;
+use AEV2_Base\vendor\doctrine\orm\src\Tools\Console\EntityManagerProvider\SingleManagerProvider;
 
 // Adjust this path to your actual bootstrap.php
 require __DIR__ . '/../bootstrap.php';
