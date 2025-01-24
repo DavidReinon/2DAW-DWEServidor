@@ -8,7 +8,7 @@ docker exec -it 6262cb9f2316165 bash
 
 symfony new --webapp my_project_name
 
-symfony new my_project_name
+symfony new my_project_name --webapp
 
 ## 2. Gestion BD
 
@@ -18,7 +18,8 @@ php bin/console list doctrine
 ### - Instalar dependencias si no lo has hecho.
 composer require symfony/orm-pack
 
-composer require–dev symfony/maker-bundle
+(No hace falta de normal, si ya has iniciado con parametro --webapp):
+composer require --dev symfony/maker-bundle
 
 ### - Configurar .env
 DATABASE_URL="mysql://db_user:db_password@127.18.0.1:3306/db_name?serverVersion=10.11.2-MariaDB&charset=utf8mb4
