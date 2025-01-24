@@ -1,5 +1,9 @@
 # Guia de Comandos Symfony (con Doctrine y Twig)
 
+Concectar a Docker en Terminal local con:
+
+docker exec -it 6262cb9f2316165 bash
+
 ## 1. Empezar Proyecto
 
 symfony new --webapp my_project_name
