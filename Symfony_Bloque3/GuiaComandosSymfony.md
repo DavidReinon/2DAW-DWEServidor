@@ -4,11 +4,13 @@ Concectar a Docker en Terminal local con:
 
 docker exec -it 6262cb9f2316165 bash
 
+
 ## 1. Empezar Proyecto
 
 symfony new --webapp my_project_name
 
 symfony new my_project_name --webapp
+
 
 ## 2. Gestion BD
 
@@ -71,17 +73,33 @@ php bin/console doctrine:migrations:migrate
 Al modificar alguna entidad volver a repetir los comandos, 
 para crear otro archivo de migración y posteriormente ejecutarlo.
 
+
 ## 3. Gestion Proyecto
+
 ### - Iniciar en Local
 symfony server:start
 
 php–S localhost:8000
 
 ### - Crear CRUD de ENTIDAD
+**Metodos y Vista**:
 php bin/console make:crud Nombre_Entidad
 
 ### - Crear Controlador
 php bin/console make:controller NewController
+
+
+## 4. API concretamente
+
+### - Contenido de endpoints en Controlador
+os diferentes endpoints con metodos CRUD. o 
+
+GET, POST, PUT - (PATCH), DELETE
+
+Patch = Put/Update parcial.
+
+
+## 5. Ayuda
 
 ### - Debugear Rutas
 php bin/console debug:router
