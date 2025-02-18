@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Quirofano{% endblock %}
+
+{% block body %}
+    <h1>Create new Quirofano</h1>
+
+    {{ include('quirofano/_form.html.twig') }}
+
+    <a href="{{ path('app_quirofano_index') }}">back to list</a>
+{% endblock %}

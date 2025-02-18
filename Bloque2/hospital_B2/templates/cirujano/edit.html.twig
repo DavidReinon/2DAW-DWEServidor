@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Cirujano{% endblock %}
+
+{% block body %}
+    <h1>Edit Cirujano</h1>
+
+    {{ include('cirujano/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_cirujano_index') }}">back to list</a>
+
+    {{ include('cirujano/_delete_form.html.twig') }}
+{% endblock %}

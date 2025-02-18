@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Enfermo index{% endblock %}
+
+{% block body %}
+    <h1>Enfermo index</h1>
+
+    <h3>Numero de Enfermos actual: {{ total }}</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Enfermedad</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for enfermo in enfermos %}
+            <tr>
+                <td>{{ enfermo.id }}</td>
+                <td>{{ enfermo.nombre }}</td>
+                <td>{{ enfermo.apellidos }}</td>
+                <td>{{ enfermo.enfermedad }}</td>
+                <td>
+                    <a href="{{ path('app_enfermo_show', {'id': enfermo.id}) }}">show</a>
+                    <a href="{{ path('app_enfermo_edit', {'id': enfermo.id}) }}">edit</a>
+                    <a href="{{ path('app_enfermo_duplicate', {'id': enfermo.id}) }}">Duplicate</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_enfermo_new') }}">Create new</a>
+{% endblock %}

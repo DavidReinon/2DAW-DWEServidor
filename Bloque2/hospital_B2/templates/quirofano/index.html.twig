@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Quirofano index{% endblock %}
+
+{% block body %}
+    <h1>Quirofano index</h1>
+
+    <h3>Numero de Quirofanos actual: {{ total }}</h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>CodigoQuirofano</th>
+            <th>Estado</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for quirofano in quirofanos %}
+            <tr>
+                <td>{{ quirofano.id }}</td>
+                <td>{{ quirofano.codigoQuirofano }}</td>
+                <td>{{ quirofano.estado ? 'Libre' : 'Ocupado' }}</td>
+                <td>
+                    <a href="{{ path('app_quirofano_show', {'id': quirofano.id}) }}">show</a>
+                    <a href="{{ path('app_quirofano_edit', {'id': quirofano.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_quirofano_new') }}">Create new</a>
+{% endblock %}

@@ -47,7 +47,7 @@ class Juegos
     private datetime $fecha_record_actual;
 
     // relación unidireccional
-    #[ManyToOne(targetEntity: 'Jugadores')]
+    #[ManyToOne(targetEntity: jugadores::class)]
     #[JoinColumn(name: 'jugador_id', referencedColumnName: 'id')]
     private Jugadores $jugador;
 

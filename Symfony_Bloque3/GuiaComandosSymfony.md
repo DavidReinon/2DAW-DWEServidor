@@ -92,7 +92,7 @@ php bin/console make:controller NewController
 ## 4. API concretamente
 
 ### - Contenido de endpoints en Controlador
-os diferentes endpoints con metodos CRUD. o 
+Los diferentes endpoints con metodos CRUD. o 
 
 GET, POST, PUT - (PATCH), DELETE
 

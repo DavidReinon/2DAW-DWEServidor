@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cirujano{% endblock %}
+
+{% block body %}
+    <h1>Cirujano</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ cirujano.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ cirujano.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Apellidos</th>
+                <td>{{ cirujano.apellidos }}</td>
+            </tr>
+            <tr>
+                <th>Especialidad</th>
+                <td>{{ cirujano.especialidad }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_cirujano_index') }}">back to list</a>
+
+    <a href="{{ path('app_cirujano_edit', {'id': cirujano.id}) }}">edit</a>
+
+    {{ include('cirujano/_delete_form.html.twig') }}
+{% endblock %}
